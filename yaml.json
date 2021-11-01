@@ -12,48 +12,4 @@
     // 	],
     // 	"description": "Log output to console"
     // }
-
-
-    "PyPI Travis Configuration": {
-        "prefix": "travispypi",
-        "body": [
-            "language: python",
-            "python:",
-            "- '3.6'",
-            "script:",
-            "- python -m unittest",
-            "- python setup.py sdist",
-            "deploy:",
-            "  provider: pypi",
-            "  user: ngeor",
-            "  password:",
-            "    secure: travis encrypt your-password-here --add deploy.password",
-            "  on:",
-            "    tags: true",
-            "    repo: ngeor/${1:repo-name}",
-            "  skip_cleanup: true"
-        ]
-    },
-    "npm Travis Configuration": {
-        "prefix": "travisnpm",
-        "body": [
-            "language: node_js",
-            "sudo: false",
-            "node_js:",
-            "- lts/*",
-            "after_success:",
-            "- npm run coveralls",
-            "cache:",
-            "  directories:",
-            "  - node_modules",
-            "deploy:",
-            "  provider: npm",
-            "  email: Nikolaos.Georgiou@gmail.com",
-            "  api_key:",
-            "    secure: travis setup npm",
-            "  on:",
-            "    tags: true",
-            "    repo: ngeor/${1:repo-name}",
-        ]
-    }
 }

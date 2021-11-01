@@ -14,14 +14,6 @@
 		"description": "Log output to console"
 	}
 */
-	"Variable assignment with Bamboo fallback": {
-		"prefix": "vabf",
-		"body": [
-			"$1=\"\\${$1:-\\$bamboo_$1}\""
-		],
-		"description": "Assign a variable with fallback to Bamboo environment variable"
-	},
-
 	"Check for empty parameter": {
 		"prefix": "argnull",
 		"body": [
@@ -51,5 +43,5 @@
 			"if [[ \"\\$1\" == '--' ]]; then shift; fi"
 		],
 		"description": "Getting options from arguments"
-	},
+	}
 }
