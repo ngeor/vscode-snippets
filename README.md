@@ -2,6 +2,8 @@
 
 Snippets for VS Code.
 
+## Windows
+
 The folder location for Windows is
 
 ```
@@ -19,4 +21,12 @@ or create a symbolic link (use an Administrator Command Prompt):
 ```
 cd %APPDATA%\Code\User
 mklink /D snippets C:\Users\jdoe\Projects\github\vscode-snippets
+```
+
+## Mac
+
+The folder location for Mac is
+
+```
+~/Library/Application Support/Code/User/snippets
 ```
