@@ -1,0 +1,15 @@
+{
+    "Python Hello World": {
+        "prefix": "pyhello",
+        "body": [
+            "#!/usr/bin/env python",
+            "",
+            "def main():",
+            "\tprint(\"Hello, world!\")",
+            "",
+            "if __name__ == \"__main__\":",
+            "\tmain()"
+        ],
+        "description": "A hello world Python script with a main function"
+    }
+}
